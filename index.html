@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sapiencia</title>
+    <link rel="shortcut icon" href="icon/sapiencia-favicon-color.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/sapiencia.js" defer></script>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="menu-sup">
+
+            <div class="logo">
+    
+                <img src="images/logo-bn.png" alt="Logo Sapiencia" class="logo-img">
+    
+            </div>
+            <nav class="menu-sup contenedor">
+                <ul class="menu-sup contenedor lista-menusup">
+    
+                    <li class="horario"><div>959416801</div><div>L-V 8:00-15:00</div></li>
+                    <li><a href="#">Aula Virtual</a></li>
+    
+                </ul>
+            </nav>
+        </div>
+        <nav class="menu-sub">
+            <ul class="menu-sub lista-menusub">
+
+                <li id="menu-activo"><a href="index.html">Inicio</a></li>
+                <li><a href="html/centro.html">El Centro</a>
+                    <ul class="desplegable">
+                        <li><a href="#">Aulas</a></li>
+                        <li><a href="#">Instalaciones</a></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Ubicación</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/oferta.html">Oferta Educativa</a>
+                    <ul class="desplegable">
+                        <li><a href="#">ESO</a></li>
+                        <li><a href="#">Bachillerato</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="html/administracion.html">Administración</a>
+                    <ul class="desplegable">
+                        <li><a href="#">Matrículas</a></li>
+                        <li><a href="#">Becas</a></li>
+                        <li><a href="#">Títulos</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Personal</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="html/orientacion.html">Orientación</a>
+                    <ul class="desplegable">
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">Continuar estudiando</a></li>
+                        <li><a href="#">Salidas profesionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/contacto.html">Solicita Información</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="contenedor-slide">
+
+            <div class="slide fade">
+
+                <img src="images/slide2.jpg" alt="Alumnos en el césped">
+                <div class="texto-slide">Estudia en Sapiencia</div>
+                <div class="texto-slide sub">"Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber." Albert Einstein</div>
+
+            </div>
+
+            <div class="slide fade">
+
+                <img src="images/slide1.jpg" alt="Alumnos en la puerta">
+                <div class="texto-slide">Estudia en Sapiencia</div>
+                <div class="texto-slide sub">Instalaciones de primera</div>
+
+            </div>
+
+            <div class="slide fade">
+
+                <img src="images/slide3.jpg" alt="Biblioteca">
+                <div class="texto-slide">Estudia en Sapiencia</div>
+                <div class="texto-slide sub">Biblioteca con más de 1000 ejemplares de manuales técnicos</div>
+
+            </div>
+
+            <a class="ant" onclick="pasarSlide(-1)">&#10094;</a>
+            <a class="sig" onclick="pasarSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="circulos-slide">
+
+            <span class="punto" onclick="slideActual(1)"></span>
+            <span class="punto" onclick="slideActual(2)"></span>
+            <span class="punto" onclick="slideActual(3)"></span>
+
+        </div>
+    </header>
+
+    <main class="principal">
+
+    </main>
+
+    <footer class="pie">
+
+    </footer>
+</body>
+</html>

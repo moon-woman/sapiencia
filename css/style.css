@@ -1,0 +1,277 @@
+/* importar las fuentes */
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: url("../fonts/Montserrat/static/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* estilos de la cabecera */
+
+.cabecera{
+    margin-top: 0;
+    background: rgb(128, 0, 32, 0.9);
+}
+
+
+.logo-img{
+    width: 13%;
+}
+
+/* estilos menú superior */
+
+.menu-sup{
+    display: grid;
+    margin-top: -1.4%;
+    color: white;
+    background: rgb(128, 0, 32);
+}
+
+.logo{
+    margin: 2% 0 0 2%;
+    grid-column: 1;
+}
+
+.contenedor {
+    grid-column: 2;
+}
+
+.lista-menusup{
+    margin: 8% 0 0 -75%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+}
+
+.lista-menusup li{
+    margin-right: 10%;
+}
+
+.lista-menusup li div{
+
+    font-family: 'Montserrat Bold';
+    text-align: center;
+
+}
+
+.lista-menusup li a{
+    font-family: 'Montserrat Bold';
+    text-decoration: none;
+    color: white;
+
+}
+
+.horario{
+    background: rgb(116, 0, 29);
+    text-align: center;
+    margin: auto;
+    width: 47%;
+    height: 81%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+
+/* estilos del menu inferior */
+
+#menu-activo a{
+
+    text-decoration: none;
+    color: #faebd7;
+    font-family: "Montserrat Bold";
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+#menu-activo{
+    background-color: rgb(128, 0, 32);
+}
+.menu-sub{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.lista-menusub{
+
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+}
+
+.lista-menusub li{
+    margin-right: 2%;
+    margin-left: 2%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lista-menusub li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat Bold";
+    font-size: 15px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* estilos menu inferior desplegable */
+
+.lista-menusub .desplegable {
+    display: none;
+    position: absolute;
+    background-color: rgb(128, 0, 32, 0.7);
+    z-index: 1;
+    line-height: 30px;
+    top: 100%;
+    
+}
+
+.lista-menusub li:hover{
+    background-color: rgb(128, 0, 32);
+}
+
+.lista-menusub li:hover .desplegable {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lista-menusub .desplegable li {
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.lista-menusub .desplegable li a {
+    padding: 10px;
+    margin-left: 0px;
+}
+
+/* estilo de los slides */
+
+.contenedor-slide{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    
+}
+
+.contenedor-slide *{
+    
+    box-sizing: border-box;
+}
+
+.slide{
+    
+    display: none;
+
+}
+
+.slide img{
+    max-width: 100%;
+    height: auto;
+    background: rgb(128, 0, 32);
+    opacity: 0.4;
+}
+
+.sig, .ant{
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.sig{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.sig:hover, .ant:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.circulos-slide{
+    text-align: center;
+}
+
+.punto{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6. ease;
+}
+
+.activo, .punto:hover{
+
+    background-color: #717171;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.texto-slide{
+    color: white;
+    font-family: "Montserrat Black";
+    font-size: 50px;
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub{
+
+    color: white;
+    font-family: "Montserrat Black";
+    font-size: 30px;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+
+}
